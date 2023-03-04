@@ -1,0 +1,1 @@
+There is no documentation at the moment because I am stupid as fuck and I have no idea how to write documentation and also this is a garbage api wrapper that no one will want to use because it is utter dogshite. Furthermore I'm no where near done.
