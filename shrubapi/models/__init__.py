@@ -1,1 +1,2 @@
-from .key import *
+from .key import Key
+from .player import Player

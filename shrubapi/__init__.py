@@ -1,2 +1,1 @@
-from .client import *
-from .models import *
+from .client import HypixelApiClient

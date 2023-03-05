@@ -1,5 +1,6 @@
 import requests
-from .models import *
+from .models import Key
+from .models import Player
 
 url = 'https://api.hypixel.net'
 
@@ -11,6 +12,16 @@ class HypixelApiClient:
         self.key = None
 
         self._validate_api_key()
+
+    def get_user_from_uuid(self, uuid):
+        response = requests.get(
+            f"{url}/player?uuid={uuid}", headers={'API-Key': self.token}
+        )
+        data = response.json()
+        if self._is_response_success(response):
+            return Player(data)
+        else:
+            return None
 
     
     def _validate_api_key(self):
