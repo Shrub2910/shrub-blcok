@@ -161,3 +161,4 @@ cython_debug/
 
 special.txt
 test.py
+client.cpython-310.pyc
